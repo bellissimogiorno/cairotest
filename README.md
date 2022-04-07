@@ -11,30 +11,35 @@ I am pleased to share this with the Cairo community, and feedback and suggestion
 
 ## How to use Cairo test suite
 
-### Examples
-
-A short tutorial is [`here`](https://github.com/bellissimogiorno//tree/main/cairotest-demo).
-
-The test suite is used throughout the [cairo-integer-types](https://github.com/bellissimogiorno/cairo-integer-types/tree/main/) library.  See any file whose name begins with `test_`, as in [`test_biguint.py`](https://github.com/bellissimogiorno/cairo-integer-types/blob/main/int_unbounded/test_bigint.py) or [`test_uint125.py`](https://github.com/bellissimogiorno/cairo-integer-types/blob/main/int_fixedwidth/test_uint125.py).
-
-
-
 ### Install
 
-You'll need a working Cairo installation.
+Just use `pip` in the usual way.  For example on a Linux environment this should work:
+```
+pip3 cairotest
+```
+
+### Examples
+
+A short tutorial is [`here`](https://github.com/bellissimogiorno/cairotest/tree/main/cairotest-demo).
+
+For more robust usage see the [cairo-integer-types](https://github.com/bellissimogiorno/cairo-integer-types/tree/main/) library.  See any file whose name begins with `test_`, as in [`test_biguint.py`](https://github.com/bellissimogiorno/cairo-integer-types/blob/main/int_unbounded/test_bigint.py) or [`test_uint125.py`](https://github.com/bellissimogiorno/cairo-integer-types/blob/main/int_fixedwidth/test_uint125.py).
+
+
+### Install Cairo
+
+Presumably if you're interested in `cairotest` then you have Cairo installed, but just in case ...
 
 * [Official Cairo install instructions are here](https://www.cairo-lang.org/docs/quickstart.html#installation) and
 * [my personal setup script is below](#my-install)
 
--- so do that first!  The rest of these instructions assume you're in a Cairo virtual environment.  We'll also assume you're using a Linux system; YMMV on other systems but the overall idea should be the same.
 
 ## Why do we need a Cairo test framework?
 
 Seriously?  You do!
 
-See [this repo](https://github.com/bellissimogiorno/cairo-integer-types/tree/main/) for usage examples. 
+See [this repo](https://github.com/bellissimogiorno/cairo-integer-types/tree/main/) for usage examples.
 
-## My setup 
+## My setup
 
 This is what I type to get set up and running with a Cairo development environment on a fresh machine running Debian linux (Ubuntu flavour).  Help yourself (but don't blame me if something goes wrong):
 
