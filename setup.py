@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="cairotest",
-    version="0.2.2",
+    version="0.2.3",
     scripts=["cairotest.py"],
     author="Jamie Gabbay",
     author_email="bellissimogiorno@gmail.com",
@@ -18,5 +18,11 @@ setuptools.setup(
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
+        "Framework :: Hypothesis",
+        "Framework :: Pytest",
+    ],
+    install_requires=[
+        "hypothesis>=6.39.4",
+        "pytest>=7.1.1",
     ],
 )
